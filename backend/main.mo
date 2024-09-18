@@ -4,29 +4,29 @@ import Nat "mo:base/Nat";
 
 actor Restaurant {
     // Restaurant information
-    private stable var name : Text = "Gourmet Delights";
-    private stable var description : Text = "Experience culinary excellence at Gourmet Delights, where every dish tells a story.";
+    private stable var name : Text = "Josh's Cafe";
+    private stable var description : Text = "Your go-to spot for healthy and delicious meals in a cozy atmosphere.";
     
     // Hours of operation
     private stable var hours : [(Text, Text)] = [
-        ("Monday", "11:00 AM - 9:00 PM"),
-        ("Tuesday", "11:00 AM - 9:00 PM"),
-        ("Wednesday", "11:00 AM - 9:00 PM"),
-        ("Thursday", "11:00 AM - 9:00 PM"),
-        ("Friday", "11:00 AM - 10:00 PM"),
-        ("Saturday", "10:00 AM - 10:00 PM"),
-        ("Sunday", "10:00 AM - 8:00 PM")
+        ("Monday", "8:00 AM - 5:00 PM"),
+        ("Tuesday", "8:00 AM - 5:00 PM"),
+        ("Wednesday", "8:00 AM - 5:00 PM"),
+        ("Thursday", "8:00 AM - 5:00 PM"),
+        ("Friday", "8:00 AM - 5:00 PM"),
+        ("Saturday", "Closed"),
+        ("Sunday", "Closed")
     ];
 
     // Address information
-    private stable var address : Text = "123 Gourmet Street, Foodville, FD 12345";
+    private stable var address : Text = "123 Pine St Test CA";
 
     // Menu items
     private stable var menu : [(Text, Text, Nat)] = [
-        ("Signature Steak", "Prime cut beef with herb butter", 2999),
-        ("Seafood Pasta", "Fresh seafood in a creamy garlic sauce", 2499),
-        ("Vegetarian Delight", "Grilled vegetables with quinoa", 1899),
-        ("Chocolate Lava Cake", "Rich chocolate cake with a molten center", 899)
+        ("Quinoa Bowl", "Nutrient-rich quinoa with mixed vegetables and grilled chicken", 1299),
+        ("Avocado Toast", "Whole grain toast topped with smashed avocado and seeds", 899),
+        ("Green Smoothie", "Blend of spinach, banana, and almond milk", 699),
+        ("Grilled Salmon Salad", "Fresh greens with grilled salmon and light vinaigrette", 1499)
     ];
 
     // Query functions
