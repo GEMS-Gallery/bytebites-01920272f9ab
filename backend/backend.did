@@ -1,0 +1,13 @@
+service : {
+  getAddress: () -> (text) query;
+  getHours: () -> (vec record {
+                         text;
+                         text;
+                       }) query;
+  getMenu: () -> (vec record {
+                        text;
+                        text;
+                        nat;
+                      }) query;
+  getRestaurantInfo: () -> (text, text) query;
+}
